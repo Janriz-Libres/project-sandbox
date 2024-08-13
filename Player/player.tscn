@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b16wy1e51ik31"]
+[gd_scene load_steps=4 format=3 uid="uid://b16wy1e51ik31"]
 
+[ext_resource type="Script" path="res://Player/player.gd" id="1_bwytu"]
 [ext_resource type="Texture2D" uid="uid://pdwuu8j1am22" path="res://Player/mPlayer_ [elf].png" id="1_w44yq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6wwjl"]
@@ -7,6 +8,7 @@ radius = 2.0
 height = 10.0
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_bwytu")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
