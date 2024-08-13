@@ -10,15 +10,18 @@ extends CharacterBody2D
 func _physics_process(delta):
 	var input_vector: Vector2 = Input.get_vector("left", "right", "up", "down")
 	
-	if input_vector:
-		if input_vector.x:
-			animation_tree.set("parameters/Idle/blend_position", input_vector.x)
-			animation_tree.set("parameters/Move/blend_position", input_vector.x)
-			
-		animation_state.travel("Move")
-		velocity = velocity.move_toward(input_vector * max_speed, acceleration)
+	if input_vector.x:
+		animation_tree.set("parameters/Idle/blend_position", input_vector.x)
+		animation_tree.set("parameters/Move/blend_position", input_vector.x)
+		move(input_vector)
+	elif input_vector.y:
+		move(input_vector)
 	else:
 		animation_state.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, friction)
 		
 	move_and_slide()
+
+func move(input_vector: Vector2):
+	animation_state.travel("Move")
+	velocity = velocity.move_toward(input_vector * max_speed, acceleration)
