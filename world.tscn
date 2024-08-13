@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://7ju7mpc0by18"]
+
+[ext_resource type="PackedScene" uid="uid://b16wy1e51ik31" path="res://Player/player.tscn" id="1_muh5j"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_muh5j")]
+position = Vector2(158, 85)
