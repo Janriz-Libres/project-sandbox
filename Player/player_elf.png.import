@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjbruq6b84ew2"
-path="res://.godot/imported/forest_ [bridgeAnimatedTiles].png-ae34e80ed69ae465cfac056cfd8cc560.ctex"
+uid="uid://pdwuu8j1am22"
+path="res://.godot/imported/player_elf.png-e967fae0d43c261f8409bab069b50a56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Forest/forest_ [bridgeAnimatedTiles].png"
-dest_files=["res://.godot/imported/forest_ [bridgeAnimatedTiles].png-ae34e80ed69ae465cfac056cfd8cc560.ctex"]
+source_file="res://Player/player_elf.png"
+dest_files=["res://.godot/imported/player_elf.png-e967fae0d43c261f8409bab069b50a56.ctex"]
 
 [params]
 

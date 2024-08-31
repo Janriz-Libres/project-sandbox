@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://7ju7mpc0by18"]
 
 [ext_resource type="PackedScene" uid="uid://b16wy1e51ik31" path="res://Player/player.tscn" id="1_muh5j"]
-[ext_resource type="Texture2D" uid="uid://b3h6fxk0bi5lj" path="res://World/Forest/forest_.png" id="1_tpvnw"]
+[ext_resource type="Texture2D" uid="uid://b3h6fxk0bi5lj" path="res://World/Forest/forest.png" id="1_tpvnw"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_1vbst"]
 tile_data = PackedInt32Array(0, 393216, 3, 65536, 393216, 4, 1, 458752, 3, 65537, 458752, 4, 2, 524288, 3, 65538, 524288, 4, 3, 589824, 3, 65539, 589824, 4)
@@ -339,7 +339,7 @@ pattern_0 = SubResource("TileMapPattern_1vbst")
 [node name="World" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(176, 136)
+position = Vector2(176, 137)
 position_smoothing_enabled = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]

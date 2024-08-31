@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bax6jyij7of5q"
-path="res://.godot/imported/forestPath_.png-6f67339aae34117fc92a1183034eb869.ctex"
+uid="uid://cy1rkbqupy3bh"
+path="res://.godot/imported/thief.png-c18769904c22b9c2f60f0e4fa84a25a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Forest/forestPath_.png"
-dest_files=["res://.godot/imported/forestPath_.png-6f67339aae34117fc92a1183034eb869.ctex"]
+source_file="res://NPCs/Silas/thief.png"
+dest_files=["res://.godot/imported/thief.png-c18769904c22b9c2f60f0e4fa84a25a3.ctex"]
 
 [params]
 

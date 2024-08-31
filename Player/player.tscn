@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://b16wy1e51ik31"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_bwytu"]
-[ext_resource type="Texture2D" uid="uid://pdwuu8j1am22" path="res://Player/mPlayer_ [elf].png" id="1_w44yq"]
+[ext_resource type="Texture2D" uid="uid://pdwuu8j1am22" path="res://Player/player_elf.png" id="1_w44yq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6wwjl"]
 radius = 2.0
