@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://8j0pdnyvenfn"]
+
+[ext_resource type="PackedScene" uid="uid://b35utar8ad6f8" path="res://stats.tscn" id="1_lo0ev"]
+[ext_resource type="Texture2D" uid="uid://cy1rkbqupy3bh" path="res://NPCs/Silas/thief.png" id="2_iigkj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6t72j"]
+radius = 2.0
+height = 10.0
+
+[node name="Silas" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Stats" parent="." instance=ExtResource("1_lo0ev")]
+money = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -9)
+texture = ExtResource("2_iigkj")
+hframes = 8
+vframes = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_6t72j")

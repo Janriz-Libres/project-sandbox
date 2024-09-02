@@ -1,13 +1,15 @@
-[gd_scene load_steps=20 format=3 uid="uid://b16wy1e51ik31"]
+[gd_scene load_steps=21 format=3 uid="uid://bnmuhsutwyeye"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_bwytu"]
 [ext_resource type="Texture2D" uid="uid://pdwuu8j1am22" path="res://Player/player_elf.png" id="1_w44yq"]
+[ext_resource type="PackedScene" uid="uid://b35utar8ad6f8" path="res://stats.tscn" id="2_rneyo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6wwjl"]
 radius = 2.0
 height = 10.0
 
 [sub_resource type="Animation" id="Animation_qv48t"]
+resource_name = "RESET"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -205,6 +207,9 @@ graph_offset = Vector2(0, -67.0082)
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_bwytu")
 metadata/_edit_group_ = true
+
+[node name="Stats" parent="." instance=ExtResource("2_rneyo")]
+money = 30
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -10)
