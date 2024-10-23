@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://0esw0i5rv0cx" path="res://camera_2d.tscn" id="1_pp8dq"]
 [ext_resource type="Texture2D" uid="uid://b3h6fxk0bi5lj" path="res://World/Forest/forest.png" id="1_tpvnw"]
 [ext_resource type="PackedScene" uid="uid://bnmuhsutwyeye" path="res://Actors/Player/player.tscn" id="2_ne4id"]
-[ext_resource type="PackedScene" uid="uid://8j0pdnyvenfn" path="res://Actors/NPCs/Silas/silas.tscn" id="4_gun4a"]
+[ext_resource type="PackedScene" uid="uid://diiesf6ffioa7" path="res://Actors/NPCs/Silas/silas.tscn" id="4_gun4a"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_1vbst"]
 tile_data = PackedInt32Array(0, 393216, 3, 65536, 393216, 4, 1, 458752, 3, 65537, 458752, 4, 2, 524288, 3, 65538, 524288, 4, 3, 589824, 3, 65539, 589824, 4)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://cti4ff7yaoyno"]
+[gd_scene load_steps=2 format=3 uid="uid://blrsgvyqgogoa"]
 
 [ext_resource type="PackedScene" uid="uid://1anbtaoyn8hx" path="res://Actors/NPCs/npc_skeleton.tscn" id="1_jvl8d"]
 

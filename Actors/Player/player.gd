@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 @export var MAX_SPEED: int = 80
-@export var acceleration: int = 10
-@export var friction: int = 10
+@export var ACCElERATION: int = 10
+@export var FRICTION: int = 10
 
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var animation_state: AnimationNodeStateMachinePlayback = animation_tree.get("parameters/playback")
@@ -18,10 +18,10 @@ func _physics_process(_delta):
 		move(input_vector)
 	else:
 		animation_state.travel("Idle")
-		velocity = velocity.move_toward(Vector2.ZERO, friction)
+		velocity = velocity.move_toward(Vector2.ZERO, FRICTION)
 		
 	move_and_slide()
 
 func move(input_vector: Vector2):
 	animation_state.travel("Move")
-	velocity = velocity.move_toward(input_vector * MAX_SPEED, acceleration)
+	velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCElERATION)
