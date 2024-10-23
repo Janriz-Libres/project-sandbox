@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy1rkbqupy3bh"
-path="res://.godot/imported/thief.png-c18769904c22b9c2f60f0e4fa84a25a3.ctex"
+uid="uid://1slxob43kgds"
+path="res://.godot/imported/thief_hand.png-a53a2eed27c021c084c127d75304acf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NPCs/Silas/thief.png"
-dest_files=["res://.godot/imported/thief.png-c18769904c22b9c2f60f0e4fa84a25a3.ctex"]
+source_file="res://Actors/NPCs/Silas/thief_hand.png"
+dest_files=["res://.godot/imported/thief_hand.png-a53a2eed27c021c084c127d75304acf5.ctex"]
 
 [params]
 

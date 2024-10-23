@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://1anbtaoyn8hx"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_qxiq4"]
+
+[node name="NPCSkeleton" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_qxiq4")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="StateTimer" type="Timer" parent="."]

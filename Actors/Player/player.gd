@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var max_speed: int = 80
+@export var MAX_SPEED: int = 80
 @export var acceleration: int = 10
 @export var friction: int = 10
 
@@ -24,4 +24,4 @@ func _physics_process(_delta):
 
 func move(input_vector: Vector2):
 	animation_state.travel("Move")
-	velocity = velocity.move_toward(input_vector * max_speed, acceleration)
+	velocity = velocity.move_toward(input_vector * MAX_SPEED, acceleration)
