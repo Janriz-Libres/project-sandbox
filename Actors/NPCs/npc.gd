@@ -1,11 +1,12 @@
 extends CharacterBody2D
 
-@onready var state_timer: Timer = $StateTimer
-
 @export var MAX_SPEED: int = 80
 @export var ACCELERATION: int = 10
 @export var FRICTION: int = 10
 @export var WANDER_RANGE: int = 32
+
+@onready var state_timer: Timer = $StateTimer
+@onready var navigation_agent_2d = $NavigationAgent2D
 
 enum State {
 	IDLE,
@@ -14,8 +15,12 @@ enum State {
 
 var state: State = State.IDLE
 var wander_target: Vector2 = Vector2.ZERO
+var destination: Vector2 = Vector2.ZERO
 
-func _physics_process(delta) -> void:
+func _ready():
+	state_timer.timeout.connect(on_state_timer_timeout)
+
+func _physics_process(_delta) -> void:
 	match (state):
 		State.IDLE:
 			idle_state()
@@ -25,16 +30,16 @@ func _physics_process(delta) -> void:
 	move_and_slide()
 
 func idle_state() -> void:
-	velocity.move_toward(Vector2.ZERO, FRICTION)
+	velocity = velocity.move_toward(Vector2.ZERO, FRICTION)
 
 func wander_state() -> void:
 	var distance: float = global_position.distance_to(wander_target)
 	
 	if (distance <= 4):
-		velocity.move_toward(Vector2.ZERO, FRICTION)
+		velocity = velocity.move_toward(Vector2.ZERO, FRICTION)
 	else:
 		var direction: Vector2 = global_position.direction_to(wander_target)
-		velocity.move_toward(direction * MAX_SPEED, ACCELERATION)
+		velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION)
 
 func randomize_state() -> State:
 	var random_index: int = randi_range(0, State.size() - 1)
@@ -53,8 +58,9 @@ func pick_wander_target() -> Vector2:
 
 	return global_position + Vector2(x, y)
 
-func _on_state_timer_timeout() -> void:
+func on_state_timer_timeout() -> void:
 	state = randomize_state()
+	print("State: ", state)
 	if state == State.WANDER:
 		wander_target = pick_wander_target()
 	
