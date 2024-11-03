@@ -235,3 +235,7 @@ tree_root = SubResource("AnimationNodeStateMachine_0fi25")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = 1.0
 parameters/Move/blend_position = 1.0
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
+position = Vector2(0, -1)
+radius = 2.0
